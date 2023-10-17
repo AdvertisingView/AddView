@@ -1,0 +1,10 @@
+/* 
+  Localizable.strings
+  
+
+  Created by Senior Developer on 27.07.2023.
+  
+*/
+errorDescription = "Сайтта техникалық жұмыстар жүргізілуде, \nбірақ жақын арада барлығын қалпына келтіреміз";
+buttonTitle = "Негізгі бет";
+support = "Қолдау қызметіне хабарласу";

@@ -1,0 +1,10 @@
+/* 
+  Localizable.strings
+  
+
+  Created by Senior Developer on 28.07.2023.
+  
+*/
+errorDescription = "На сайте ведутся технические работы, \nно уже скоро всё восстановим.";
+buttonTitle = "Обновить";
+support = "Написать в поддержку";

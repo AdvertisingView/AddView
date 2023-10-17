@@ -1,0 +1,10 @@
+/* 
+  Localizable.strings
+  
+
+  Created by Senior Developer on 28.07.2023.
+  
+*/
+errorDescription = "The site is undergoing technical work, \nbut we will restore everything soon";
+buttonTitle = "Main Page";
+support = "Contact support";

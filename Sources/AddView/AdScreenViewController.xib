@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22154" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22130"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AdScreenViewController" customModule="AddView">
+            <connections>
+                <outlet property="activityIndicatorView" destination="a8w-4h-5Ei" id="SYa-wH-SuX"/>
+                <outlet property="advertisingNavigationBar" destination="BrE-9A-Tv2" id="roC-BQ-da9"/>
+                <outlet property="loadingView" destination="zbs-7r-iwi" id="hbD-9y-5Et"/>
+                <outlet property="topActivityIndicatorView" destination="pxI-vX-5FE" id="6ml-D5-Oge"/>
+                <outlet property="urlLabel" destination="tU5-No-198" id="UNL-HX-ddH"/>
+                <outlet property="view" destination="kns-3F-tW8" id="vD6-1t-ccu"/>
+                <outlet property="webView" destination="AL5-9U-Hfm" id="9NY-yK-EVQ"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="kns-3F-tW8">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Rpb-X5-E7C">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="48"/>
+                    <color key="backgroundColor" red="0.074509803920000006" green="0.1215686275" blue="0.37647058820000001" alpha="1" colorSpace="calibratedRGB"/>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PE4-8y-yLw" userLabel="MainView">
+                    <rect key="frame" x="0.0" y="48" width="414" height="848"/>
+                    <subviews>
+                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="RvC-Yh-2Xl" userLabel="MainStackView">
+                            <rect key="frame" x="0.0" y="0.0" width="414" height="848"/>
+                            <subviews>
+                                <navigationBar contentMode="scaleToFill" translucent="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BrE-9A-Tv2">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
+                                    <color key="backgroundColor" red="0.074509803920000006" green="0.1215686275" blue="0.37647058820000001" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="barTintColor" red="0.074509803920000006" green="0.1215686275" blue="0.37647058820000001" alpha="1" colorSpace="calibratedRGB"/>
+                                    <textAttributes key="titleTextAttributes">
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </textAttributes>
+                                    <textAttributes key="largeTitleTextAttributes">
+                                        <color key="textColor" systemColor="tintColor"/>
+                                    </textAttributes>
+                                    <items>
+                                        <navigationItem title="Advertising" largeTitleDisplayMode="always" style="editor" id="bf5-rt-sxe">
+                                            <barButtonItem key="leftBarButtonItem" title="Item" image="chevron.backward" catalog="system" id="gPl-Db-OLw">
+                                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <connections>
+                                                    <action selector="tapBackButtonWithButton:" destination="-1" id="MTu-O3-smJ"/>
+                                                </connections>
+                                            </barButtonItem>
+                                            <barButtonItem key="rightBarButtonItem" id="KZx-lO-aqj">
+                                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <connections>
+                                                    <action selector="updatePageButtonWithButton:" destination="-1" id="aKw-zl-BRi"/>
+                                                </connections>
+                                            </barButtonItem>
+                                        </navigationItem>
+                                    </items>
+                                </navigationBar>
+                                <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="1000" verticalHuggingPriority="251" verticalCompressionResistancePriority="1000" text="" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tU5-No-198">
+                                    <rect key="frame" x="0.0" y="44" width="414" height="0.0"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AL5-9U-Hfm">
+                                    <rect key="frame" x="0.0" y="44" width="414" height="804"/>
+                                    <color key="backgroundColor" red="0.074509803920000006" green="0.1215686275" blue="0.37647058820000001" alpha="1" colorSpace="calibratedRGB"/>
+                                    <wkWebViewConfiguration key="configuration">
+                                        <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
+                                        <wkPreferences key="preferences"/>
+                                    </wkWebViewConfiguration>
+                                </wkWebView>
+                                <toolbar hidden="YES" opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cbx-WT-adX">
+                                    <rect key="frame" x="0.0" y="848" width="414" height="0.0"/>
+                                    <items>
+                                        <barButtonItem title="Item" image="backward.fill" catalog="system" id="7Jy-cv-mxH"/>
+                                        <barButtonItem style="plain" systemItem="flexibleSpace" id="uA0-dw-Nkh"/>
+                                        <barButtonItem id="rj9-42-0aZ"/>
+                                        <barButtonItem style="plain" systemItem="flexibleSpace" id="VtC-Uw-9CT"/>
+                                        <barButtonItem title="Item" image="forward.fill" catalog="system" id="Em9-Us-j9e">
+                                            <connections>
+                                                <action selector="tapForwardButtonWithButton:" destination="-1" id="Ufl-2N-r9m"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </items>
+                                </toolbar>
+                            </subviews>
+                            <color key="backgroundColor" red="0.074509803920000006" green="0.1215686275" blue="0.37647058820000001" alpha="1" colorSpace="calibratedRGB"/>
+                        </stackView>
+                    </subviews>
+                    <color key="backgroundColor" red="0.074509803921568626" green="0.12156862745098039" blue="0.37647058823529411" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="RvC-Yh-2Xl" secondAttribute="trailing" id="B9J-3S-Mp7"/>
+                        <constraint firstAttribute="bottom" secondItem="RvC-Yh-2Xl" secondAttribute="bottom" id="Q7D-Ua-X3t"/>
+                        <constraint firstItem="RvC-Yh-2Xl" firstAttribute="leading" secondItem="PE4-8y-yLw" secondAttribute="leading" id="WxP-fz-eiH"/>
+                        <constraint firstItem="RvC-Yh-2Xl" firstAttribute="top" secondItem="PE4-8y-yLw" secondAttribute="top" id="k2b-OI-Xw1"/>
+                    </constraints>
+                </view>
+                <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="large" translatesAutoresizingMaskIntoConstraints="NO" id="a8w-4h-5Ei">
+                    <rect key="frame" x="188.5" y="429.5" width="37" height="37"/>
+                    <color key="color" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                </activityIndicatorView>
+                <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="large" translatesAutoresizingMaskIntoConstraints="NO" id="pxI-vX-5FE">
+                    <rect key="frame" x="0.0" y="132" width="414" height="20"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="20" id="bbH-Np-vFS"/>
+                    </constraints>
+                </activityIndicatorView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zbs-7r-iwi" userLabel="LoadingView">
+                    <rect key="frame" x="0.0" y="48" width="414" height="848"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="Pmi-a7-4oC"/>
+            <color key="backgroundColor" red="0.074509803920000006" green="0.1215686275" blue="0.37647058820000001" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="zbs-7r-iwi" firstAttribute="trailing" secondItem="Pmi-a7-4oC" secondAttribute="trailing" id="1jL-JO-hEZ"/>
+                <constraint firstAttribute="bottom" secondItem="zbs-7r-iwi" secondAttribute="bottom" id="4fd-Mi-lXN"/>
+                <constraint firstAttribute="bottom" secondItem="PE4-8y-yLw" secondAttribute="bottom" id="6x2-l3-sT9"/>
+                <constraint firstItem="a8w-4h-5Ei" firstAttribute="centerY" secondItem="kns-3F-tW8" secondAttribute="centerY" id="C8C-fY-Gjg"/>
+                <constraint firstItem="pxI-vX-5FE" firstAttribute="top" secondItem="AL5-9U-Hfm" secondAttribute="top" constant="40" id="F9k-hZ-8u3"/>
+                <constraint firstItem="a8w-4h-5Ei" firstAttribute="centerX" secondItem="kns-3F-tW8" secondAttribute="centerX" id="FE6-ji-tbB"/>
+                <constraint firstItem="Rpb-X5-E7C" firstAttribute="leading" secondItem="Pmi-a7-4oC" secondAttribute="leading" id="HsY-uz-RBG"/>
+                <constraint firstItem="Pmi-a7-4oC" firstAttribute="trailing" secondItem="Rpb-X5-E7C" secondAttribute="trailing" id="JQ5-JP-8sc"/>
+                <constraint firstItem="zbs-7r-iwi" firstAttribute="leading" secondItem="Pmi-a7-4oC" secondAttribute="leading" id="Jlh-9E-ybX"/>
+                <constraint firstItem="PE4-8y-yLw" firstAttribute="leading" secondItem="kns-3F-tW8" secondAttribute="leading" id="KIa-ig-V7D"/>
+                <constraint firstItem="pxI-vX-5FE" firstAttribute="leading" secondItem="AL5-9U-Hfm" secondAttribute="leading" id="L1C-wv-B5k"/>
+                <constraint firstItem="PE4-8y-yLw" firstAttribute="top" secondItem="Rpb-X5-E7C" secondAttribute="bottom" id="LV6-7n-wEW"/>
+                <constraint firstAttribute="trailing" secondItem="PE4-8y-yLw" secondAttribute="trailing" id="W8I-Yf-lNW"/>
+                <constraint firstItem="PE4-8y-yLw" firstAttribute="top" secondItem="Pmi-a7-4oC" secondAttribute="top" id="WbB-78-zgO"/>
+                <constraint firstItem="Rpb-X5-E7C" firstAttribute="top" secondItem="kns-3F-tW8" secondAttribute="top" id="eUa-h9-lak"/>
+                <constraint firstItem="pxI-vX-5FE" firstAttribute="trailing" secondItem="AL5-9U-Hfm" secondAttribute="trailing" id="grN-YU-BJC"/>
+                <constraint firstItem="zbs-7r-iwi" firstAttribute="top" secondItem="Rpb-X5-E7C" secondAttribute="bottom" id="u4P-Qb-iua"/>
+            </constraints>
+            <point key="canvasLocation" x="-730.43478260869574" y="26.785714285714285"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="backward.fill" catalog="system" width="128" height="77"/>
+        <image name="chevron.backward" catalog="system" width="97" height="128"/>
+        <image name="forward.fill" catalog="system" width="128" height="77"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="tintColor">
+            <color red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
