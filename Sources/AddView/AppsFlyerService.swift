@@ -2,7 +2,7 @@
 //  Created by Developer on 07.12.2022.
 //
 import AppsFlyerLib
-import AppFlyerFramework
+import AppFlyerSDK
 import Foundation
 import Combine
 import UIKit

@@ -2,7 +2,7 @@
 //  Created by Developer on 07.12.2022.
 //
 import Combine
-import AppFlyerFramework
+import AppFlyerSDK
 import AppsFlyerLib
 import UIKit
 import FirestoreFirebase
