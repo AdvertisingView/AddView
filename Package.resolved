@@ -37,12 +37,12 @@
       }
     },
     {
-      "identity" : "appflyerframework",
+      "identity" : "appflyersdk",
       "kind" : "remoteSourceControl",
-      "location" : "https://github.com/AppsFlyer-org/AppFlyerFramework",
+      "location" : "https://github.com/AppFlyerSDK/AppFlyerSDK",
       "state" : {
-        "branch" : "development",
-        "revision" : "cc7d56d7faae78e719fde2b7f74a5ae164a5dfb6"
+        "branch" : "master",
+        "revision" : "b060eb6fb63ff8b9c796b4db0cdc78f919e26681"
       }
     },
     {

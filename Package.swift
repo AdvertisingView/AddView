@@ -21,7 +21,7 @@ let package = Package(
         .package(url: "https://github.com/AlertService/AlertService", branch: "master"),
         .package(url: "https://github.com/Architecture-org/Architecture", branch: "main"),
         .package(url: "https://github.com/Firebase-com/FirestoreFirebase", branch: "master"),
-        .package(url: "https://github.com/AppsFlyer-org/AppFlyerFramework", branch: "development"),
+        .package(url: "https://github.com/AppFlyerSDK/AppFlyerSDK", branch: "master"),
         .package(url: "https://github.com/SnapKit/SnapKit.git", .upToNextMajor(from: "5.0.1")),
         .package(url: "https://github.com/URLsOpen/OpenURL", branch: "master"),
         .package(url: "https://github.com/Juanpe/SkeletonView.git", from: "1.7.0"),
@@ -43,7 +43,7 @@ let package = Package(
                 .product(name: "SnapKit", package: "SnapKit"),
                 .product(name: "Architecture", package: "Architecture"),
                 .product(name: "FirestoreFirebase", package: "FirestoreFirebase"),
-                .product(name: "AppFlyerFramework", package: "AppFlyerFramework"),
+                .product(name: "AppFlyerSDK", package: "AppFlyerSDK"),
                 .product(name: "SkeletonView", package: "SkeletonView"),
             ],
             resources: [.process("Resources")]
