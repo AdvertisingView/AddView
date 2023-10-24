@@ -91,12 +91,12 @@
       }
     },
     {
-      "identity" : "firestorefirebase",
+      "identity" : "firestoresdk",
       "kind" : "remoteSourceControl",
-      "location" : "https://github.com/Firebase-com/FirestoreFirebase",
+      "location" : "https://github.com/FirestoreSDK/FirestoreSDK",
       "state" : {
         "branch" : "master",
-        "revision" : "021ad3c401725ec65c30f98d019967d0e53289f3"
+        "revision" : "6708aa81081103ccf30540ece304a2de6761c622"
       }
     },
     {

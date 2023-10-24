@@ -5,7 +5,7 @@ import Combine
 import AppFlyerSDK
 import AppsFlyerLib
 import UIKit
-import FirestoreFirebase
+import FirestoreSDK
 import SentryApp
 import Amplitude
 

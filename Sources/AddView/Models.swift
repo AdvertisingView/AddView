@@ -2,7 +2,7 @@
 //  Created by Developer on 07.12.2022.
 //
 import UIKit
-import FirestoreFirebase
+import FirestoreSDK
 import AlertService
 
 public struct RequestDataModel: Codable {
